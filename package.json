@@ -1,0 +1,22 @@
+{
+    "name": "ecommerce-poc",
+    "author": {
+        "name": "Sener Ali"
+    },
+    "scripts": {
+        "format-staged": "pretty-quick --staged",
+        "prepare": "husky"
+    },
+    "devDependencies": {
+        "@ianvs/prettier-plugin-sort-imports": "^4.2.1",
+        "husky": "^9.0.11",
+        "prettier": "2.8.8",
+        "pretty-quick": "^4.0.0"
+    },
+    "dependencies": {},
+    "engines": {
+        "node": ">=18.17.0",
+        "npm": "please-use-yarn",
+        "yarn": ">= 1.22.17"
+    }
+}
