@@ -1,0 +1,12 @@
+{
+    "ts-node": {
+        "files": true,
+        "require": ["tsconfig-paths/register"]
+    },
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "typeRoots": ["@types/*.d.ts"],
+        "baseUrl": "."
+    },
+    "extends": "./tsconfig.paths.json"
+}

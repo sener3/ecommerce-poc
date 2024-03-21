@@ -1,0 +1,48 @@
+type Product {
+    id: String!
+    name: String!
+    description: String!
+    price: Float!
+}
+
+type PartialProduct {
+    id: String
+    name: String
+    description: String
+    price: Float
+}
+
+type GetProductResponse {
+    data: PartialProduct
+    message: String!
+    code: Int!
+}
+
+type GetProductsResponse {
+    data: [PartialProduct]
+    message: String!
+    code: Int!
+}
+
+input CreateProductInput {
+    name: String!
+    description: String!
+    price: Float!
+}
+
+input UpdateProductInput {
+    id: String!
+    name: String
+    description: String
+    price: Float
+}
+
+type Query {
+    getProduct(id: String!): GetProductResponse
+    getProducts: GetProductsResponse
+}
+
+type Mutation {
+    createProduct(product: CreateProductInput!): Response
+    updateProduct(product: UpdateProductInput!): Response
+}

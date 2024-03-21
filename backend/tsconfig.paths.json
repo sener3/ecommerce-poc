@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "paths": {
+            "*": ["types/*.d.ts"],
+            "@/lib/*": ["lib/*"],
+            "@/utils/*": ["utils/*"],
+            "@/graphql/*": ["graphql/*"],
+            "@/prisma/*": ["prisma/*"],
+            "@/types/*": ["types/*"],
+            "@/constants/*": ["constants/*"]
+        }
+    }
+}
