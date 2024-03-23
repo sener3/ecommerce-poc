@@ -37,4 +37,4 @@
 
 backend/prisma/generated/*
 
-backend/.env
+frontend/**/*.gql.ts

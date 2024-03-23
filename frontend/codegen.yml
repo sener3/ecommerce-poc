@@ -1,0 +1,23 @@
+# This configuration file tells GraphQL Code Generator how
+# to generate types based on our schema.
+overwrite: true
+schema: "./schema.graphql"
+documents:
+    - "./**/*.(gql)"
+generates:
+    # Specify where our generated types should live.
+    ./src/__generated__/types.ts:
+        plugins:
+            - "typescript"
+    ./:
+        preset: near-operation-file
+        presetConfig:
+            extension: .gql.ts
+            baseTypesPath: __generated__/types
+        plugins:
+            - typescript-operations
+            - typed-document-node
+        config:
+            documentVariableSuffix: ""
+            fragmentVariableSuffix: ""
+            documentNodeImport: "@apollo/client#TypedDocumentNode"
